@@ -9,15 +9,15 @@ Before running tests for cli add rights the performing file - ex: chmod 755 inde
 const fs = require('fs'),
       cl = require('node-cl-log');
 
-const BundleSh = require('./build/bundle');
+const BundleMd = require('./build/bundle');
 const newBundleConfig = [
   './data/',
-  'bundle.sh',
+  'bundle.Md',
   filesListOrder = [
-    '1.sh',
-    '2.sh',
-    '3.sh'
+    '1.md',
+    '2.md',
+    '3.md'
   ]
 ];
-const bundle = new BundleSh(newBundleConfig);
+const bundle = new BundleMd(newBundleConfig);
 bundle.genBundle();
