@@ -6,13 +6,10 @@ Before running tests for cli add rights the performing file - ex: chmod 755 inde
 
 
 
-const fs = require('fs'),
-      cl = require('node-cl-log');
-
-const BundleMd = require('./build/bundle');
+const BundleMd = require('node-md-bundler');
 const newBundleConfig = [
   './data/',
-  'bundle.Md',
+  'bundle.md',
   filesListOrder = [
     '1.md',
     '2.md',
